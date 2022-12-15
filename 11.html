@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	
+	function add(timp1, timp2)
+	{
+		var minutes = 0;
+		var hours = 0;
+		var seconds = 0;
+		seconds = timp1.seconds + timp2.seconds;
+		while(seconds > 60)
+		{
+			seconds-=60;
+			minutes++;
+		}
+		minutes = timp1.minutes + timp2.minutes;
+		while(minutes > 60)
+		{
+			minutes-=60;
+			hours++;
+		}
+		hours = timp1.hours + timp2.hours;
+		alert("Hours" + hours + "Minutes" + hours + "seconds" + seconds)
+	}
+
+	function decrease(timp1, timp2)
+	{
+		var minutes = 0;
+		var hours = 0;
+		var seconds = 0;
+
+		seconds = timp1.seconds - timp2.seconds;
+		while(seconds < 0)
+		{
+			seconds+=60;
+			minutes--;
+		}
+		minutes = timp1.minutes - timp2.minutes;
+		while(minutes < 60)
+		{
+			minutes+=60;
+			hours--;
+		}
+		hours = timp1.hours - timp2.hours;
+		alert("Hours" + hours + "Minutes" + hours + "seconds" + seconds)
+	}
+
+	function compare(timp1, timp2)
+	{
+		var tot = 0;
+		var tot1 = 0;
+		tot = timp1.hours * 60;
+		tot = tot + timp1.minutes * 60;
+		tot = tot + timp1.seconds;
+
+		tot1 = timp2.hours * 60;
+		tot1 = tot1 + timp2.minutes * 60;
+		tot1 = tot1 + timp2.seconds;
+
+		if(tot1 > tot2)
+		{
+			return ("1 > 2");
+		}
+		else if(tot1 == tot2)
+		{
+			return ("1 == 2");
+		}
+		else
+		{
+			return ("1 < 2");
+		}
+
+	}
+
+	function calc()
+	{
+		var timp1 =
+		{
+			hours: parseInt(prompt("hours_timp1")),
+			minutes: parseInt(prompt("minutes_timp1")),
+			seconds: parseInt(prompt("seconds_timp1")),
+		};
+		var timp2 = timp1;
+		timp2.hours = parseInt(prompt("hours_timp2"));
+		timp2.minutes = parseInt(prompt("minutes_timp2"));
+		timp2.seconds = parseInt(prompt("seconds_timp2"));
+		add(timp1, timp2);
+		decrease(timp1, timp2);
+		compare(timp1, timp2);
+	};
+
+</script>
+</head>
+<body>
+<input type="button" name="" value="Calculeaza" onclick="calc()">
+
+
+</body>
+</html>
