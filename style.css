@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+.body {
+  
+  background-color: #e66053;
+  color: #4E4F4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #F6E9DC;
+  -ms-flex-preferred-size: 980px;
+      flex-basis: 980px;
+border: none;
+}
+
+.calendar {
+  display: fixed;
+  width: 100%;
+border: none;
+}
+
+.calendar__day__header,
+.calendar__day__cell,.calendar__day__cell_zero {
+ border: 2px solid #e66053;
+  text-align: center;
+  width: 100% / 7;
+  vertical-align: middle;
+}
+.calendar__day__header:first-child,
+.calendar__day__cell:first-child,
+.calendar__day__cell_zero:first-child{
+  border-left: none;
+}
+.calendar__day__header:last-child,
+.calendar__day__cell:last-child ,
+.calendar__day__cell_zero:last-child{
+  border-right: none;
+}
+
+.calendar__day__header,
+.calendar__day__cell,.calendar__day__cell_zero {
+  padding: .75rem 0 1.5rem;
+}
+
+.calendar__banner--month {
+  text-align: center;
+  padding: .75rem;
+}
+.calendar__banner--month h1 {
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+}
+
+.calendar__day__header {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.calendar__day__cell,.calendar__day__cell_zero {
+  font-size: 4rem;
+  position: relative;
+}
+
+tr:nth-child(odd) > .calendar__day__cell:nth-child(odd) {
+  color: #e66053;
+}
+
+tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
+  color: #e66053;
+}
+
+#box{
+width: 50%;
+height: 50%;
+box-shadow: -13px 12px 3px gray;
+position: absolute;
+z-index: 1;
+background-color: lightgray;
+color: red;
+
+border:15px green solid;
+display: none;
+top: 100px;
+left:350px;
+}
+#close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+background-color: red;
+color: blue;
+border:none;
+margin: 5px;
+}
+#close:hover{
+  color: red;
+  background-color: aqua;
+}
+textarea{
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  text-shadow:-4px 3px 3px rgba(255,168,241,1);
+  font-weight:bold;
+  font-style:oblique;
+  font-variant:small-caps;
+  color:#884012;letter-spacing:1pt;word-spacing:2pt;font-size:30px;text-align:left;font-family:arial black, sans-serif;line-height:1;
+
+}
+.calendar__day__cell:hover{
+  background-color: gray;
+}
+.line_button{
+  width: 100px;
+  background-color: #85adad; 
+  height: 616px;
+}

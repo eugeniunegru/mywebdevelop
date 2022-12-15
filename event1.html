@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div onmouseover="hover1()" id="divul" width="300px" height="300px" style=" background-color: blue; border: 3px solid red; "></div>
+<input type="button" onclick="opreste()" name="" value="opreste">
+<p id="text1">sae</p>
+<script type="text/javascript">
+var parag=document.getElementById('text1');
+	function hover1() {
+		//alert("adf");
+		parag.innerHTML=Math.random(0.01);
+		//parag.innerHTML="ok";
+	}
+	function opreste(){
+		document.getElementById('divul').setAttribute("onmouseover","");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="../image/icon.ico">
+  <title>Infinity</title>
+  <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body style=" background: url(../image/background.png) no-repeat center center fixed;  background-size: cover;" onscroll="posit()">
+<div class="Band" id="Band">
+  <p>Telefon:&nbsp;&nbsp;&nbsp;+(373) 0601 23 345</p>
+  <p>Adresă:&nbsp;&nbsp;&nbsp;or. Chișinău, str. Miron Costin 26/2, Oficiu 304</p>
+  <p class="program" onclick="show1()">Program</p>
+</div>
+
+<nav role='navigation' id="nav">
+<a href="../index.html"><img src="../image/logou.png"></a>
+  <ul>
+    <li><a href="../index.html">Acasă</a></li>
+    <li><a href="Servicii.html">Servicii</a>
+      <ul>
+        <li><a href="Servicii.html#fitness">Fitness</a></li>
+        <li><a href="Servicii.html#masaj">Masaj</a></li>
+        <li><a href="Servicii.html#solariu">Solariu</a></li>
+        <li><a href="Servicii.html#epilare">Epilare</a></li>
+        <li><a href="Servicii.html#Piscina">Piscină</a></li>
+      </ul>
+    </li>
+    <li><a href="Abonamente.html">Abonamente</a></li>
+    <li><a href="Price.html">Price-list</a></li>
+    <li><a href="Baby-siting.html">Baby-siting</a></li>
+    <li><a href="Plan.html">Plan nutrițional</a></li>
+    <li><a href="Contacte.html">Contacte</a></li>
+  </ul>
+</nav> 
+
+<!--corp------------------------------------------------>
+<div class="pricediv">
+
+    <button class="button" onclick="table1()">
+        <span>ABONAMENTE</span>
+    </button>
+    <div id="tableunu" >
+    <table class="table-fill"  >
+<thead>
+<tr>
+<th class="text-left">Abonamente</th>
+<th class="text-left">Perioada(luni)</th>
+<th class="text-left">Preț(lei)</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">"START"</td>
+<td class="text-left">3/6/12</td>
+<td class="text-left">1300/2500/5000</td>
+</tr>
+<tr>
+<td class="text-left">"NEAȚA"</td>
+<td class="text-left">3/6/12</td>
+<td class="text-left">900/1700/3200</td>
+</tr>
+<tr>
+<td class="text-left">"SEARA"</td>
+<td class="text-left">3/6/12</td>
+<td class="text-left">900/1700/3200</td>
+</tr>
+<tr>
+<td class="text-left">"WEEKEND"</td>
+<td class="text-left">3/6/12</td>
+<td class="text-left">700/1400/2300</td>
+</tr>
+<tr>
+<td class="text-left">"VIP"</td>
+<td class="text-left">3/6/12</td>
+<td class="text-left">2800/5000/10000</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+    <button class="button" onclick="table2()">
+        <span>PREȚURI GENEROASE – DE NEUITAT
+</span>
+    </button>
+    <div id="tabledoi" >
+    <table class="table-fill"  >
+<thead>
+<tr>
+<th class="text-left">Tip Abonament</th>
+<th class="text-left">Preț fără TVA(lei)</th>
+<th class="text-left">Suma TVA(lei)</th>
+<th class="text-left">Preț inclusiv TVA(lei)</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">"START"</td>
+<td class="text-left">500</td>
+<td class="text-left">100</td>
+<td class="text-left">600</td>
+</tr>
+<tr>
+<td class="text-left">"NEAȚA"</td>
+<td class="text-left">350</td>
+<td class="text-left">70</td>
+<td class="text-left">420</td>
+</tr>
+<tr>
+<td class="text-left">"SEARA"</td>
+<td class="text-left">350</td>
+<td class="text-left">70</td>
+<td class="text-left">420</td>
+</tr>
+<tr>
+<td class="text-left">"WEEKEND"</td>
+<td class="text-left">280</td>
+<td class="text-left">56</td>
+<td class="text-left">336</td>
+</tr>
+<tr>
+<td class="text-left">"VIP"</td>
+<td class="text-left">1000</td>
+<td class="text-left">200</td>
+<td class="text-left">1200</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+     <button class="button" onclick="table3()"> 
+        <span>Servicii</span>
+    </button>
+
+    <div id="tabletrei" >
+    <table class="table-fill"  >
+<thead>
+<tr>
+<th class="text-left">Serviciul prestat</th>
+<th class="text-left">Preț fără TVA(lei)</th>
+<th class="text-left">Suma TVA(lei)</th>
+<th class="text-left">Preț inclusiv TVA(lei)</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Masaj de relaxare</td>
+<td class="text-left">150</td>
+<td class="text-left">30</td>
+<td class="text-left">180</td>
+</tr>
+<tr>
+<td class="text-left">Masaj Anticelulitic</td>
+<td class="text-left">280</td>
+<td class="text-left">56</td>
+<td class="text-left">336</td>
+</tr>
+<tr>
+<td class="text-left">Masaj Facial (20 minute)</td>
+<td class="text-left">100</td>
+<td class="text-left">20</td>
+<td class="text-left">120</td>
+</tr>
+<tr>
+<td class="text-left">Masaj Facial (30 minute)</td>
+<td class="text-left">130</td>
+<td class="text-left">26</td>
+<td class="text-left">156</td>
+</tr>
+<tr>
+<td class="text-left">Masaj Energizant</td>
+<td class="text-left">300</td>
+<td class="text-left">60</td>
+<td class="text-left">360</td>
+</tr>
+<tr>
+<td class="text-left">Piscina (o ora)</td>
+<td class="text-left">50</td>
+<td class="text-left">10</td>
+<td class="text-left">60</td>
+</tr>
+
+<tr>
+<td class="text-left">Solariu ( 1 minut)</td>
+<td class="text-left">5</td>
+<td class="text-left">1</td>
+<td class="text-left">6</td>
+</tr>
+<tr>
+<td class="text-left">Solariu (30 minute)</td>
+<td class="text-left">120</td>
+<td class="text-left">24</td>
+<td class="text-left">144</td>
+</tr>
+<tr>
+<td class="text-left">Solariu  (60 minute)</td>
+<td class="text-left">200</td>
+<td class="text-left">40</td>
+<td class="text-left">240</td>
+</tr>
+<tr>
+<td class="text-left">Solariu (90 minute)</td>
+<td class="text-left">250</td>
+<td class="text-left">40</td>
+<td class="text-left">300</td>
+</tr>
+
+<tr>
+<td class="text-left">Solariu (120 minute)</td>
+<td class="text-left">300</td>
+<td class="text-left">60</td>
+<td class="text-left">360</td>
+</tr>
+<tr>
+<td class="text-left">Epilare cu ceara Total</td>
+<td class="text-left">250</td>
+<td class="text-left">50</td>
+<td class="text-left">300</td>
+</tr>
+<tr>
+<td class="text-left">Epilare cu zahar Total</td>
+<td class="text-left">320</td>
+<td class="text-left">64</td>
+<td class="text-left">384</td>
+</tr>
+<tr>
+<td class="text-left">Plan nutritional “Cellulem Block Belleza”</td>
+<td class="text-left">300-1200</td>
+<td class="text-left">60-240</td>
+<td class="text-left">360-1440</td>
+</tr>
+<tr>
+<td class="text-left">Baby-Siting “Babies&Toddlers” (o ora)</td>
+<td class="text-left">50</td>
+<td class="text-left">10</td>
+<td class="text-left">60</td>
+</tr>
+<tr>
+<td class="text-left">Baby-Siting “Preschoolers” (o ora)</td>
+<td class="text-left">45</td>
+<td class="text-left">9</td>
+<td class="text-left">54</td>
+</tr>
+<tr>
+<td class="text-left">Baby-Siting “Juniors” (o ora)</td>
+<td class="text-left">40</td>
+<td class="text-left">8</td>
+<td class="text-left">48</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="programdiv1" id="programdiv"> 
+<div class="button21" id="previous" onclick="prev()">&lt;</div>
+<h4 id="head">"Program"</h4><br>
+<h5>Luni-Vineri:</h5><br><h6 id="primul">07:00-22:00</h6><br>
+<h5>Sâmbăta-Duminica:</h5><br>
+<h6 id="doilea">08:00-21:00</h6>
+<img onclick="myFunction()" src="../image/close.png">
+<div class="button21" id="next" onclick="next()">&gt;</div>
+</div>
+
+<div class="footer" >
+<p>Infinity SRL<br><br>
+Copyright © 2010-2017 Infinity Limited.</p>
+<p>Contacte</p> 
+<p class="contacte">MD-2068, Chisinau <br><br>
+Tel: +(373) 0601 23 345 <br><br>
+Fax: +(373) 022-44-31-94 <br><br>
+Email: fe.infinity.srl@gmail.com</p>
+<img src="../image/logou.png" class="imgf">
+</div>
+
+
+<script src="../js/jscript.js"></script> 
+</body>
+</html>

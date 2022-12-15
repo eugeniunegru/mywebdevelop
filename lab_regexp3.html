@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="Numar" name="" value="xdfg$@e54.wAs">
+<input type="button" name="" value="Click" onclick="click1()">
+<script type="text/javascript">
+	function click1(){	
+var str =document.getElementById("Numar").value;
+var patt = new RegExp("^[a-zA-Z0-9]{4}[#$_]{1}@([a-zA-Z0-9]{3,4})[.][a-zA-Z]{2,3}$");
+//alert(str.match(patt2));
+
+if (str.match(patt)) 
+{alert("Numar corect");} 
+else
+{alert("Numar incorect");}
+}
+</script>
+</body>
+</html>

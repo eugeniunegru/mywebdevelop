@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>raketa</title>
+	<style type="text/css">
+		body{
+			background: url("A.jpg");
+		}
+		img{
+			position: absolute;
+			bottom: 0px;
+			/*transition: left 8s cubic-bezier(0.25, 0.1, 0.25, 1.0);*/
+			width:150px; height:200px;
+			}
+			/*#image:hover{
+			 transition:all 2s ease-in-out;
+	         transform:translate(350px,-350px);
+	         animation:rotates1 8s ease-out;		
+			}
+		 @keyframes rotates1 {
+from {transform: rotateX(0deg);}
+to{transform: rotateX(90deg);}
+}*/
+div{
+	background-color: aqua;
+	}
+	</style>
+
+</head>
+<body ><div ondblclick="schimb()" width="100%" heigth="100%">
+<img src="racketa.png" alt="error" id="image" onclick="rocket()">
+</div>
+<script type="text/javascript">
+	function rocket(){
+	var rok=document.getElementById("image");
+    rok.style.transition="all 5s ease-out";
+	rok.style.transform="translate(1290px,-510px) scale(0.05)";
+	//rok.style.animation="rotates1 3s ease-out";	
+	
+					 }
+
+function schimb(){
+		document.getElementById("image").src="tenor.gif";
+				}
+</script>
+</body>
+</html>

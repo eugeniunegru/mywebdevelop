@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+			
+		
+	</style>
+</head>
+<body>
+<!--<div style="background-color: aqua;border: 3px solid red;
+width: 100%; height: 754px;" onmousemove="misca()"></div>-->
+<canvas style="border: 3px solid red; 
+width: 100%; height: 754px;" id="c" onmousemove="misca()"></canvas>
+<div id="parag" style="position: absolute;
+z-index: 2; ">
+<p id="x"> </p>
+<p id="y"> </p>
+</div>
+<script type="text/javascript">
+var cordx=document.getElementById('x');
+var cordy=document.getElementById('y');
+
+	
+	var x1,y1;
+	function misca() {
+		var x=event.clientX;
+	var y=event.clientY;
+var ctx = c.getContext("2d");
+ctx.moveTo(x1,y1);
+ctx.lineTo(x,y);
+ctx.stroke();
+x1=x;y1=y;
+	//document.getElementById('parag').style.position="absolute" ;
+	//document.getElementById('parag').style.backgroundColor="red" ;
+	document.getElementById('parag').style.left=x+"px";
+	document.getElementById('parag').style.top=y+"px";
+	cordx.innerHTML="X=  "+x;
+	cordy.innerHTML="Y=  "+y;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="image/icon.ico">
+	<title>Infinity</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/textefect.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/sm-core-css.css">
+<link rel="stylesheet" type="text/css" href="css/sm-simple.css">
+
+</head>
+<body style=" background: url(image/background.png) no-repeat center center fixed; background-size: cover;"  onload="myFunctionshow()" onscroll="posit()">
+<div class="Band" id="Band">
+	<p>Telefon:&nbsp;&nbsp;&nbsp;+(373) 0601 23 345</p>
+	<p>Adresă:&nbsp;&nbsp;&nbsp;or. Chișinău, str. Miron Costin 26/2, Oficiul 304</p>
+	<p class="program" onclick="show1()">Program</p>
+</div>
+
+<nav role='navigation' id="nav">
+<a href="#"><img src="image/logou.png" id="logo"></a>
+  <ul>
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="HTML/Servicii.html">Servicii</a>
+      <ul>
+        <li><a href="HTML/Servicii.html#fitness">Fitness</a></li>
+        <li><a href="HTML/Servicii.html#masaj">Masaj</a></li>
+        <li><a href="HTML/Servicii.html#solariu">Solariu</a></li>
+        <li><a href="HTML/Servicii.html#epilare">Epilare</a></li>
+        <li><a href="HTML/Servicii.html#Piscina">Piscină</a></li>
+      </ul>
+    </li>
+    <li><a href="HTML/Abonamente.html">Abonamente</a></li>
+    <li><a href="HTML/Price.html">Price-list</a></li>
+    <li><a href="HTML/Baby-siting.html">Baby-siting</a></li>
+    <li><a href="HTML/Plan.html">Plan nutrițional</a></li>
+    <li><a href="HTML/Contacte.html">Contacte</a></li>
+  </ul>
+</nav> 
+
+<div class="container">
+        <div class="row"> 
+			<div class="divcr">
+				<div id="home-carousel" data-interval="false">
+				  <div class="carousel-inner">
+                    <div class="item1 active">
+                        <div class="carousel-caption4">
+                            <div class="animated bounceInRight">
+                                <p><h5>Doriți o schimbare în viața Dumneavostră?  FE ”Infinity” SRL vă vine în ajutor !</h5>
+<br>
+Dragi femei, mămici, adolescente, iubitoare de mișcare și dornice de a arată frumos mereu- vă punem la dispoziția Dvs. un club de sport special pentru cele mai deosebite doamne și domnișoare de pe această planetă, pentru a fi bine-dispuse și fericite oriunde ați fi!<br>
+"MAKE IT REAL!"- acesta este sloganul nostru și vă asigurăm că doar cu noi, visurile devin realitate!
+Suntem pregătiți să oferim vieții Dvs. culoare și entuziasm! Vă așteptăm cu mare drag! 
+Iar pentru ca începutul să fie mai interesant, primul antrenament este GRATUIT!</p>
+                            </div>
+                        </div>
+                    </div>   
+            </div><!--/.carousel-inner-->
+		</div>
+	</div>
+		
+			<div class="col-xs-6 col-lg-4">
+				<div class="ch-item ch-img-1">
+							<div class="ch-info">
+								<h3 id="ch-img-1">Pușca Elena Director</h3>
+							</div>
+				</div>
+			</div>
+            <div class="col-lg-12 col-md-4 col-xs-6 thumbplaceholder pozitia" style="min-width: 750px; padding-top: 20px;">
+				<div class="ch-item1 ch-img-2" onclick="schimb(this.className)">
+							<div class="ch-info1">
+								<h3 id="ch-img-2">Bantuş Maxim</h3>
+							</div>
+				</div>
+				<div class="ch-item1 ch-img-3" onclick="schimb(this.className)">
+							<div class="ch-info1" >
+								<h3 id="ch-img-3">Rozlova Anastasia</h3>
+							</div>
+				</div>
+				<div class="ch-item1 ch-img-4" onclick="schimb(this.className)">
+							<div class="ch-info1" >
+								<h3 id="ch-img-4">Şchendra Anastasia-Sofia</h3>
+							</div>
+				</div>
+				<div class="ch-item1 ch-img-5" onclick="schimb(this.className)">
+							<div class="ch-info1">
+								<h3 id="ch-img-5">Lupasciuc Mirela</h3>
+							</div>
+				</div>
+				<div class="ch-item1 ch-img-6" onclick="schimb(this.className)">
+							<div class="ch-info1" >
+								<h3 id="ch-img-6">Mutruc Arina</h3>
+							</div>
+				</div>
+				<div class="ch-item1 ch-img-7" onclick="schimb(this.className)">
+							<div class="ch-info1">
+								<h3 id="ch-img-7">Stavila Doina</h3>
+							</div>
+				</div>
+            </div>
+        </div><!--Row-->
+</div>
+
+<div class="programdiv1" id="programdiv"> 
+<div class="button21" id="previous" onclick="prev()">&lt;</div>
+<h4 id="head">"Program"</h4><br>
+<h5>Luni-Vineri:</h5><br><h6 id="primul">07:00-22:00</h6><br>
+<h5>Sâmbăta-Duminica:</h5><br>
+<h6 id="doilea">08:00-21:00</h6>
+<img onclick="myFunction()" src="image/close.png">
+<div class="button21" id="next" onclick="next()">&gt;</div>
+</div>
+﻿
+<div class="footer">
+<p>Infinity SRL<br><br>
+Copyright © 2010-2017 Infinity Limited.</p>
+<p>Contacte</p>	
+<p class="contacte">MD-2068, Chisinau <br><br>
+Tel: +(373) 0601 23 345 <br><br>
+Fax: +(373) 022-44-31-94 <br><br>
+Email: fe.infinity.srl@gmail.com</p>
+<img src="image/logou.png" class="imgf">
+</div>
+
+<div id="preloader">
+  <div id="loader"></div>
+</div>
+
+<script src="js/jscript.js"></script> 
+</body>
+</html>
+
+

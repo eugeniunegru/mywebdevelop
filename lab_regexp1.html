@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<input type="text" id="Numar" name="" value="0-456-2345-434-23">
+<input type="button" name="" value="Click" onclick="click1()">
+<script type="text/javascript">
+	function click1(){	
+var str =document.getElementById("Numar").value;
+var patt = new RegExp("^[+|0]-[0-9]{3}-[0-9]{4}-[0-9]{3}-[0-9]{2}$");
+//alert(str.match(patt2));
+
+if (str.match(patt)) 
+{alert("Numar corect");} 
+else
+{alert("Numar incorect");}
+}
+</script>
+</body>
+</html>

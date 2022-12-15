@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+       
+        <title>Leon-security</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/f1889b20c5ba5233582dfda4f07eef12.png" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .form-style-6{max-width: 500px;margin:18% auto;padding: 16px;}
+.form-style-6 input[type="text"],.form-style-6 input[type="password"],.form-style-6 textarea,.form-style-6 select 
+{ -webkit-transition: all 0.30s ease-in-out; -moz-transition: all 0.30s ease-in-out;-ms-transition: all 0.30s ease-in-out;-o-transition: all 0.30s ease-in-out; outline: none; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;width: 100%;background: #fff; margin-bottom: 4%;border: 1px solid #ccc;padding: 3%; color: #555;font: 95% Arial, Helvetica, sans-serif;}
+.form-style-6 input[type="text"]:focus,.form-style-6 input[type="password"]:focus,.form-style-6 textarea:focus,.form-style-6 select:focus
+{ box-shadow: 0 0 5px #61210B; padding: 3%; border: 1px solid #61210B;}
+
+input[type="submit"], input[type="button"]{box-sizing: border-box; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;   width: 100%;padding: 3%;background: #610b0b;border-bottom: 2px solid #B40404;border-top-style: none; border-right-style: none; border-left-style: none;       color: #fff;}
+ input[type="submit"]:hover,
+input[type="button"]:hover{
+ background: #FF0000;
+}
+</style>
+</head>
+<body style="background: url(images/forest-wallpaper-20.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;"  onload="myFunctionshow()" onscroll="meniu()">
+    <div class="menu-wrap">
+  <div class="menu" id="meniu">
+    <ul>
+         <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="Despre_noi.html">Despre Noi</a></li>
+      <li><a href="Servicii.html">Servicii</a></li>
+      <li><a href="Clienți.html">Clienți </a></li>
+      <li><a href="Noutîți.html">Noutăți </a></li>
+      <li><a href="contact.html">Contacte</a></li>
+      <li><a href="log.html">Conect.</a></li>
+      <li><a href="inreg.html">Înreg.</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="clearing"></div>
+<div class="header">
+  <div class="logo">
+    <h1>Leon <span>-security</span></h1>
+  </div>
+  <div class="retele">
+    <ul>
+      <li><a href="#"><img src="images/aim.png" alt="aim" /></a></li>
+      <li><a href="#"><img src="images/facebook.png" alt="facebook" /></a></li>
+      <li><a href="#"><img src="images/twwtter.png" alt="tiwwter" /></a></li>
+      <li><a href="#"><img src="images/linkedin.png" alt="linkedin'" /></a></li>
+    </ul>
+  </div>
+</div>        
+<fieldset class="panel panel-info" >
+            <div class="panel-heading" style="background-color:  #FA5858;">
+            <legend class="h4 no-margin"><b>Introduceti datele pentru conectare</b></legend>
+        </div>
+        <div class="panel-body" >
+                    
+<div class="form-group">
+
+            <label class="required " for="form_Row2_Column4_Fieldset6_prenume">Nume de utilizator <span class="required-star">*</span></label>
+    <input type="text" id="form_Row2_Column4_Fieldset6_prenume" placeholder="xxxxx.xxxxx" name="form[Row2][Column4][Fieldset6][prenume]" required="required" data-parsley-required-message="Vă rugăm introduceţi prenumele dumneavoastră" class="form-control">
+
+                <div class="form-errors form-error-box">
+    </div>
+    
+</div>
+                    
+                    
+<div class="form-group">
+
+            <label class="required" for="form_Row2_Column4_Fieldset6_firma">Parola <span class="required-star">*</span></label>
+    <input type="text" id="form_Row2_Column4_Fieldset6_firma" placeholder="xxxxx.xxxxx" name="form[Row2][Column4][Fieldset6][firma]" required="required" data-parsley-required-message="Vă rugăm introduceţi numele firmei dumneavoastră" class="form-control">
+
+                <div class="form-errors form-error-box">
+    </div>
+    
+</div>                  
+
+                    <div>
+    <button type="submit" onclick="validare()" style="float:left;background: #FA5858;" id="form_Row2_Column4_Fieldset6_trimitere_solicitare" name="form[Row2][Column4][Fieldset6][trimitere_solicitare]" class="btn btn-primary">Conectare</button></div>
+    <div>
+    <button   style="float:right; background: #FA5858;" type="button" id="form_Row2_Column4_Fieldset6_trimitere_solicitare" name="form[Row2][Column4][Fieldset6][trimitere_solicitare]" class="btn btn-primary"><a href="inreg.html" style="text-decoration-line: none;color: white;">Înregistrare</a></button></div></div>
+</fieldset></div>
+</fieldset>
+
+    
+</div>
+    </div></div>
+    <div class="copyright-wrap">
+    <div class="panel">
+      <div class="content">
+        <P>Copyright (c) my-website. Toate drepturile sunt rezervate. </P>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="windows8" id="preloader"  width="100%" height="100%" >
+  <div class="wBall" id="wBall_1">
+    <div class="wInnerBall"></div>
+  </div>
+  <div class="wBall" id="wBall_2">
+    <div class="wInnerBall"></div>
+  </div>
+  <div class="wBall" id="wBall_3">
+    <div class="wInnerBall"></div>
+  </div>
+  <div class="wBall" id="wBall_4">
+    <div class="wInnerBall"></div>
+  </div>
+  <div class="wBall" id="wBall_5">
+    <div class="wInnerBall"></div>
+  </div>
+</div>
+<script src="js/script.js"></script> 
+</body>
+</html>
